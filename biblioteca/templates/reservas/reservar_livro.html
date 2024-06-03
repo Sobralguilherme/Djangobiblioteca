@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reservar Livro</title>
+</head>
+<body>
+    <h1>Reservar Livro: {{ livro.titulo }}</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="usuario">Seu Nome:</label>
+        <input type="text" id="usuario" name="usuario" required>
+        <button type="submit">Reservar</button>
+    </form>
+</body>
+</html>
